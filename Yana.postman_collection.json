@@ -1,0 +1,1200 @@
+{
+	"info": {
+		"_postman_id": "54a39d37-9975-4963-b848-766eae1acd80",
+		"name": "Yana",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "438019"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"horacioespinosa94@gmail.com\",\n    \"password\": \"secret\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{apiVersion}}/auth/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{apiVersion}}",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"horacioespinosa94@gmail.com\",\n    \"password\": \"secret\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{apiVersion}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{apiVersion}}",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"horacioespinosa94@gmail.com\",\n    \"password\": \"secret\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/{{apiVersion}}/users",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{apiVersion}}",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.22.1"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 20:18:32 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"payload\": {\n        \"id\": \"34\",\n        \"email\": \"horacioespinosa94@gmail.com\",\n        \"password\": \"$2y$10$vWXpmG.Z5ENw.3P8ZiP3.u2rjCUGvoYx6xbjpTpiJ.zk9.jgP30za\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"horacioespinosa94@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{apiVersion}}/users/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{apiVersion}}",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"horacioespinosa94@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/{{apiVersion}}/users/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{apiVersion}}",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.22.1"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 19:50:51 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"payload\": {\n        \"id\": \"1\",\n        \"email\": \"horacioespinosa94@gmail.com\",\n        \"password\": \"$2y$10$iiYTr7Wjg6AU1dnqc7mFHeMnDGpO6MmC2AVkwXEzNTFF/ZtlAeFhe\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get single by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{apiVersion}}/users/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{apiVersion}}",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get single by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/{{apiVersion}}/users/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{apiVersion}}",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.22.1"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 15:34:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"payload\": {\n        \"id\": \"1\",\n        \"email\": \"horacioespinosa94@gmail.com\",\n        \"password\": \"$2y$10$0/RSfkBfE.1pJo/cFA.1duWUAns7Z2A.wUN209iv72SX2u3woBVE.\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{apiVersion}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{apiVersion}}",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/{{apiVersion}}/users",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{apiVersion}}",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.22.1"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 19:36:35 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"payload\": [\n        {\n            \"id\": \"32\",\n            \"email\": \"horacioespinosa94@gmail.com\",\n            \"password\": \"$2y$10$iiYTr7Wjg6AU1dnqc7mFHeMnDGpO6MmC2AVkwXEzNTFF/ZtlAeFhe\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{apiVersion}}/users/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{apiVersion}}",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/{{apiVersion}}/users/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{apiVersion}}",
+										"users",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.22.1"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 15:36:37 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"payload\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Activity",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uid\": 1,\n    \"messageText\": \"secret_segundo\",\n    \"messageFrom\": \"secret_segundo\",\n    \"datetime\": \"\",\n    \"timestamp\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{apiVersion}}/activities",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{apiVersion}}",
+								"activities"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"uid\": 1,\n    \"messageText\": \"secret_segundo\",\n    \"messageFrom\": \"secret_segundo\",\n    \"datetime\": \"\",\n    \"timestamp\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/{{apiVersion}}/activities",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{apiVersion}}",
+										"activities"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.22.1"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 20:08:27 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"payload\": {\n        \"id\": \"2\",\n        \"uid\": \"1\",\n        \"message_text\": \"secret_segundo\",\n        \"message_from\": \"secret_segundo\",\n        \"datetime\": \"2022-11-10 20:08:27\",\n        \"timestamp\": \"1668110907\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uid\": 1,\n    \"messageText\": \"secret_updated\",\n    \"messageFrom\": \"secret_updated\",\n    \"datetime\": \"\",\n    \"timestamp\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{apiVersion}}/activities/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{apiVersion}}",
+								"activities",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"uid\": 1,\n    \"messageText\": \"secret_updated\",\n    \"messageFrom\": \"secret_updated\",\n    \"datetime\": \"\",\n    \"timestamp\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/{{apiVersion}}/activities/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{apiVersion}}",
+										"activities",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.22.1"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 19:50:37 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"payload\": {\n        \"id\": \"1\",\n        \"uid\": \"1\",\n        \"message_text\": \"secret_updated\",\n        \"message_from\": \"secret_updated\",\n        \"datetime\": \"2022-11-10 19:36:21\",\n        \"timestamp\": \"1668108981\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get single by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{apiVersion}}/activities/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{apiVersion}}",
+								"activities",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get single by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/{{apiVersion}}/activities/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{apiVersion}}",
+										"activities",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.22.1"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 19:41:10 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"payload\": {\n        \"id\": \"1\",\n        \"uid\": \"1\",\n        \"message_text\": \"secret\",\n        \"message_from\": \"secret\",\n        \"datetime\": \"2022-11-10 19:36:21\",\n        \"timestamp\": \"1668108981\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{apiVersion}}/activities",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{apiVersion}}",
+								"activities"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/{{apiVersion}}/activities",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{apiVersion}}",
+										"activities"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.22.1"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 19:41:06 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"payload\": [\n        {\n            \"id\": \"1\",\n            \"uid\": \"1\",\n            \"message_text\": \"secret\",\n            \"message_from\": \"secret\",\n            \"datetime\": \"2022-11-10 19:36:21\",\n            \"timestamp\": \"1668108981\"\n        },\n        {\n            \"id\": \"2\",\n            \"uid\": \"1\",\n            \"message_text\": \"secret_segundo\",\n            \"message_from\": \"secret_segundo\",\n            \"datetime\": \"2022-11-10 20:08:27\",\n            \"timestamp\": \"1668110907\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{apiVersion}}/activities/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{apiVersion}}",
+								"activities",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/{{apiVersion}}/activities/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{apiVersion}}",
+										"activities",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.22.1"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 20:16:40 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"payload\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User activities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/{{apiVersion}}/users/:num/activities",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"{{apiVersion}}",
+						"users",
+						":num",
+						"activities"
+					],
+					"variable": [
+						{
+							"key": "num",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User activities",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{apiVersion}}/users/:num/activities",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{apiVersion}}",
+								"users",
+								":num",
+								"activities"
+							],
+							"variable": [
+								{
+									"key": "num",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.22.1"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Nov 2022 20:17:47 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"payload\": [\n        {\n            \"id\": \"2\",\n            \"uid\": \"1\",\n            \"message_text\": \"secret\",\n            \"message_from\": \"secret\",\n            \"datetime\": \"2022-11-10 20:08:27\",\n            \"timestamp\": \"1668110907\"\n        },\n        {\n            \"id\": \"2\",\n            \"uid\": \"1\",\n            \"message_text\": \"secret_segundo\",\n            \"message_from\": \"secret_segundo\",\n            \"datetime\": \"2022-11-10 20:17:45\",\n            \"timestamp\": \"1668111465\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "User specific user activity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/{{apiVersion}}/users/:num/activities/:activity",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"{{apiVersion}}",
+						"users",
+						":num",
+						"activities",
+						":activity"
+					],
+					"variable": [
+						{
+							"key": "num",
+							"value": "1"
+						},
+						{
+							"key": "activity",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User specific user activity",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/{{apiVersion}}/users/:num/activities/:activity",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{apiVersion}}",
+								"users",
+								":num",
+								"activities",
+								":activity"
+							],
+							"variable": [
+								{
+									"key": "num",
+									"value": "1"
+								},
+								{
+									"key": "activity",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.22.1"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Nov 2022 20:34:14 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"payload\": [\n        {\n            \"id\": \"2\",\n            \"uid\": \"1\",\n            \"message_text\": \"secret_segundo\",\n            \"message_from\": \"secret_segundo\",\n            \"datetime\": \"2022-11-10 20:08:27\",\n            \"timestamp\": \"1668110907\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Conversations",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uid\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/{{apiVersion}}/conversations",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"{{apiVersion}}",
+						"conversations"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Conversations",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uid\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/{{apiVersion}}/conversations",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{apiVersion}}",
+								"conversations"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.22.1"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Nov 2022 20:12:20 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"payload\": [\n        {\n            \"id\": \"1\",\n            \"messageType\": \"secret_updated\",\n            \"value\": \"secret_updated\",\n            \"timestamp\": 1668108981\n        },\n        {\n            \"id\": \"2\",\n            \"messageType\": \"secret_segundo\",\n            \"value\": \"secret_segundo\",\n            \"timestamp\": 1668110907\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wveWFuYS5jb20ubXhcLyIsImF1ZCI6InlhbmEuY29tLm14IiwiaWF0IjoxNjY4MDQzMDUzLCJuYmYiOjE2NjgwNDMwODMsImV4cCI6MTY2ODA0MzExMywiZGF0YSI6eyJlbWFpbCI6ImhvcmFjaW9lc3Bpbm9zYTk0QGdtYWlsLmNvbSJ9fQ.EsanYf00S4zFri1wrQLmBzngivQ3_RlxOsJGucg1F00",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8088",
+			"type": "string"
+		},
+		{
+			"key": "apiVersion",
+			"value": "api/v1",
+			"type": "string"
+		}
+	]
+}
